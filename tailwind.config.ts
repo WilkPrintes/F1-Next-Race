@@ -13,6 +13,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        bg_root: {
+          DEFAULT: "hsl(var(--background-root))",
+        },
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        bg_label: "hsl(var(--bg_label))",
+      },
+    },
+    fontFamily: {
+      poppins: ["var(--font-poppins)"],
     },
   },
   plugins: [],
