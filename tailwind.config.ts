@@ -20,6 +20,7 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         bg_label: "hsl(var(--bg_label))",
+        text_primary: "hsl(var(--text-primary))",
       },
     },
     fontFamily: {
