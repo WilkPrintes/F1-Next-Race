@@ -1,7 +1,5 @@
-import dynamic from "next/dynamic";
 import Header from "./Header";
-
-const CountdownServerComponent = dynamic(() => import("./temp"), { ssr: true });
+import CountdownServerComponent from "./temp";
 
 export default function Home() {
   return (
