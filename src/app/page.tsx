@@ -82,7 +82,7 @@ export default function Home() {
     );
   };
 
-  const targetDate = "2024-05-17T12:30:00";
+  const targetDate = "2024-05-18T7:30:00";
 
   return (
     <main className="flex min-h-screen bg-background items-center justify-between p-5">
@@ -98,7 +98,7 @@ export default function Home() {
           <h2 className=" font-bold text-4xl">
             Grande Prêmio da Emilia-Romagna
           </h2>
-          <h2 className=" font-bold text-3xl">Treino Livre 2</h2>
+          <h2 className=" font-bold text-3xl">Treino Livre 3</h2>
           <Countdown targetDate={targetDate} />
         </div>
       </div>
