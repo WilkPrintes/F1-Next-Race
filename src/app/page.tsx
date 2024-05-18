@@ -82,7 +82,7 @@ export default function Home() {
     );
   };
 
-  const targetDate = "2024-05-18T7:30:00";
+  const targetDate = "2024-05-18T07:30:00";
 
   return (
     <main className="flex min-h-screen bg-background items-center justify-between p-5">
