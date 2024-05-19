@@ -8,27 +8,26 @@ const CountdownServerComponent = async () => {
   let raceName = "";
 
   const res = await datas();
-  res?.forEach((actual) => {
-    const { sprint } = actual;
-    if (!sprint) {
-      const { tl1, tl2, tl3, quali, race } = actual;
-      const times = [
-        { name: "Treino Livre 1", value: tl1 },
-        { name: "Treino Livre 2", value: tl2 },
-        { name: "Treino Livre 3", value: tl3 },
-        { name: "Qualificação", value: quali },
-        { name: "Corrida Principal", value: race },
-      ];
-      times.forEach((act) => {
+  if (res && !res.sprint) {
+    const times = [
+      { name: "Treino Livre 1", value: res.tl1 },
+      { name: "Treino Livre 2", value: res.tl2 },
+      { name: "Treino Livre 3", value: res.tl3 },
+      { name: "Qualificação", value: res.quali },
+      { name: "Corrida Principal", value: res.race },
+    ];
+    times.forEach((act) => {
+      if (act.value && !targetDate) {
+        console.log(act.name);
         const difference = +new Date(act.value) - +new Date();
         if (difference > 0) {
           targetDate = act.value;
           eventName = act.name;
-          raceName = actual.name;
+          raceName = res.name;
         }
-      });
-    }
-  });
+      }
+    });
+  }
 
   return (
     <Countdown
