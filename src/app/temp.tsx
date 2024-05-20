@@ -18,7 +18,6 @@ const CountdownServerComponent = async () => {
     ];
     times.forEach((act) => {
       if (act.value && !targetDate) {
-        console.log(act.name);
         const difference = +new Date(act.value) - +new Date();
         if (difference > 0) {
           targetDate = act.value;

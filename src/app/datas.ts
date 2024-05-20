@@ -12,7 +12,7 @@ export default async function datas() {
   if (round8Data) {
     const adjustTimezone = (dateString: any, timeString: any) => {
       const date = new Date(`${dateString}T${timeString}`);
-      return addHours(date, -3).toISOString();
+      return addHours(date, 0).toISOString();
     };
 
     // Mapeando os dados para o formato desejado

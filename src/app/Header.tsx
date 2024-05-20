@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <>
       <div
-        className={`absolute flex items-center justify-center w-screen transition-all duration-1000 ${
+        className={`absolute flex items-center justify-center w-screen transition-all duration-1500 ${
           load ? "bg-background h-full" : "bg-background h-20 top-10 left-0"
         }`}
       >
